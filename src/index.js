@@ -13,13 +13,13 @@ const map = new mapboxgl.Map({
 });
 
 
-const markerDomEl = document.createElement("div");
-markerDomEl.style.width = "32px";
-markerDomEl.style.height = "31px";
-markerDomEl.style.backgroundImage = "url(http://i.imgur.com/WbMOfMl.png)";
+// const markerDomEl = document.createElement("div");
+// markerDomEl.style.width = "32px";
+// markerDomEl.style.height = "31px";
+// markerDomEl.style.backgroundImage = "url(http://i.imgur.com/WbMOfMl.png)";
 
-new mapboxgl.Marker(markerDomEl).setLngLat([-74.009, 40.705]).addTo(map);
+// new mapboxgl.Marker(markerDomEl).setLngLat([-74.009, 40.705]).addTo(map);
 
-buildMarker('hotels', [-74.006, 42.702]).addTo(map);
+buildMarker('hotels', [-74.006, 40.702]).addTo(map);
 
 

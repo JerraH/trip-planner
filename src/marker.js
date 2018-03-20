@@ -12,7 +12,7 @@ const buildMarker = function(activityType, coordinates) {
 
     //variable marker info
     if (activityType === 'hotels') {
-        markerDomEl.style.backgroundImage = "http://i.imgur.com/D9574Cu.png";
+        markerDomEl.style.backgroundImage = "url(http://i.imgur.com/D9574Cu.png)";
 
     } else if (activityType === 'restaurants') {
         markerDomEl.style.backgroundImage = "url(http://i.imgur.com/cqR6pUI.png)";
@@ -29,11 +29,11 @@ const buildMarker = function(activityType, coordinates) {
     console.log('I made a thing');
 
 
-    return new mapboxgl.Marker(markerDomEl).setLngLat(coordinates);
+   return new mapboxgl.Marker(markerDomEl).setLngLat(coordinates);
 
 }
 
-console.log(typeof buildMarker)
+
 
 
 module.exports = buildMarker;
